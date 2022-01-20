@@ -3,3 +3,4 @@ function generate() {
     document.querySelector("blockquote").innerText = quoteArr[ranNum].line;
     document.querySelector("cite").innerText = quoteArr[ranNum].movie;
 }
+generate()
