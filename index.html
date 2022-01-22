@@ -5,15 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quotes App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <main>
-        <section>
-            <h1>Random Quote Generator</h1>
+<body onload="generate_background()">
+    <main id="background">
+        <section id="background">
+            <h1 class="animate__animated animate__backInDown">The Office Quote Generator</h1>
             <blockquote></blockquote>
             <cite></cite>
-            <button id="generate" onclick="generate()">Generate</button>
+            <button id="generate" onclick="generate(), generate_background()">Roll Quote</button>
         </section>
     </main>
     

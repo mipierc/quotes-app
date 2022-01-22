@@ -6,7 +6,6 @@ html, body, div, main, section, article, h1, h2, p {
     box-sizing: border-box;
 }
 main {
-    background: darkgray;
     width: 100vw;
     height: 100vh;
     font-size: 200%;
@@ -17,8 +16,8 @@ main {
 }
 
 section {
-    max-width: 60%;
-    min-height: 40%;   
+    max-width: 50%;
+    min-height: 50%;   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,11 +25,71 @@ section {
     border: 4px solid #333;
     padding: 4rem;
     margin-top: -8rem;
-    background: #eaeaea;
+    background: #dddddd;
+    border-radius: 40px;
+    font-family: 'Bangers', display;
+}
+
+blockquote, cite, button {
+    font-family: 'Slabo 27px',serif;
+}
+
+blockquote::before {
+    font-size: 72px;
+    content: open-quote;
+}
+
+cite::before {
+    content: '\2015';
 }
 
 button {
     margin-top: 2rem;
     font-size: 110%;
     padding: .5rem 1rem;
+    border-radius: 4px;
+    border: 1px solid #333;
+    background-color: #dddddd;
+}
+
+button:hover {
+    animation: shakeX;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    background: rgb(211, 211, 211);
+}
+
+.bg-pink {
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); 
+}
+
+.bg-blue {
+    background: rgb(180,74,175);
+    background: radial-gradient(circle, rgba(180,74,175,1) 13%, rgba(0,48,255,1) 100%); 
+}
+
+.bg-yellow {
+    background: rgb(78,195,57);
+    background: radial-gradient(circle, rgba(78,195,57,1) 20%, rgba(249,255,0,1) 100%); 
+}
+
+.bg-green {
+    background: rgb(205,228,43);
+    background: radial-gradient(circle, rgba(205,228,43,1) 30%, rgba(0,255,55,1) 100%); 
+}
+
+.bg-red {
+    background: rgb(223,95,15);
+    background: radial-gradient(circle, rgba(223,95,15,1) 25%, rgba(255,0,0,1) 100%); 
+}
+
+.bg-purple {
+    background: rgb(38,69,203);
+    background: radial-gradient(circle, rgba(38,69,203,1) 20%, rgba(97,14,191,1) 100%); 
+}
+
+.bg-teal {
+    background: rgb(38,203,198);
+    background: radial-gradient(circle, rgba(38,203,198,1) 20%, rgba(14,86,191,1) 100%); 
 }
